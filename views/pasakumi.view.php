@@ -9,9 +9,15 @@
   <h1>Pasakumi</h1>
 
   <ul>
-    <?php foreach($posts as $post) { ?>
+    <?php foreach($pasakumi as $pasakums) { ?>
 
-    <li> <?= $post["name"] ?> </li>
+    <li>LAIKS - <?= $pasakums["clock"] ?> </li>
+
+    <li>NOSAUKUMS - <?= $pasakums["name"] ?> </li>
+    
+    <li>VIETA - <?= $pasakums["place"] ?> </li>
+
+    <br></br>
 
     <?php } ?>
   </ul>

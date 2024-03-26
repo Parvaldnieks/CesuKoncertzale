@@ -1,0 +1,19 @@
+button {
+    border-radius: 10px;
+    background-color: khaki;
+    text-align: center;
+    cursor: pointer;
+  }
+
+li {
+    color: dimgrey;
+    font-family: fantasy;
+}
+
+body {
+    background-color: dodgerblue;
+}
+
+h1 {
+    color: khaki;
+}

@@ -8,13 +8,7 @@ $db = new Database($config);
 $query = "SELECT * FROM pasakumi";
 $params = [];
 
-if (isset($_GET["id"]) && $_GET["id"] != "") {
-  $id = $_GET["id"];
-  $query .= " WHERE id=:id";
-  $params[":id"] = $id;
-}
-
-$posts = $db
+$pasakumi = $db
           ->execute($query, $params)
           ->fetchAll();
 

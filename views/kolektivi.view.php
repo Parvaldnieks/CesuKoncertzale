@@ -9,9 +9,13 @@
   <h1>Kolektivi</h1>
 
   <ul>
-    <?php foreach($posts as $post) { ?>
+    <?php foreach($kolektivi as $kolektivs) { ?>
 
-    <li> <?= $post["name"] ?> </li>
+    <li>VARDS - <?= $kolektivs["name"] ?> </li>
+
+    <li>APRAKSTS - <?= $kolektivs["description"] ?> </li>
+
+    <br></br>
 
     <?php } ?>
   </ul>

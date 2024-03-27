@@ -1,6 +1,8 @@
 <header>
     <nav>
-        <a href="/">Pasakumi</a>
-        <a href="/kolektivi">kolektivi</a>
+        <div>
+            <a href="/">Pasakumi</a>
+            <a href="/kolektivi">kolektivi</a>
+        </div>
     </nav>
 </header>

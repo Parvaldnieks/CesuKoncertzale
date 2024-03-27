@@ -1,7 +1,6 @@
 button {
     border-radius: 10px;
     background-color: khaki;
-    text-align: center;
     cursor: pointer;
   }
 
@@ -22,4 +21,9 @@ div {
     margin: auto;
     width: 10%;
     padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: khaki;
 }

@@ -5,8 +5,8 @@ button {
   }
 
 li {
-    color: dimgrey;
-    font-family: fantasy;
+    color: mintcream;
+    font-family: cursive;
 }
 
 body {
@@ -26,4 +26,5 @@ div {
 a {
     text-decoration: none;
     color: khaki;
+    padding: 1px;
 }

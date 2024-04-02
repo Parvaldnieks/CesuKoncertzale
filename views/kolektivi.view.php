@@ -11,11 +11,10 @@
   <ul>
     <?php foreach($kolektivi as $kolektivs) { ?>
 
-    <li>VARDS - <?= $kolektivs["name"] ?> </li>
-
-    <li>APRAKSTS - <?= $kolektivs["description"] ?> </li>
-
-    <br></br>
+      <li>PASAKUMS - <?= $kolektivs["name"] ?> / <?= $kolektivs["description"] ?>
+        <form class="delete-form" method="POST" action="/delete">
+        <button name="id" value="<?= $kolektivs["id"] ?>">Delete</button> </form>
+      </li>
 
     <?php } ?>
   </ul>

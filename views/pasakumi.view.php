@@ -11,13 +11,10 @@
   <ul>
     <?php foreach($pasakumi as $pasakums) { ?>
 
-    <li>LAIKS - <?= $pasakums["clock"] ?> </li>
-
-    <li>NOSAUKUMS - <?= $pasakums["name"] ?> </li>
-    
-    <li>VIETA - <?= $pasakums["place"] ?> </li>
-
-    <br></br>
+    <li>PASAKUMS - <?= $pasakums["name"] ?> / <?= $pasakums["clock"] ?> / <?= $pasakums["place"] ?> 
+        <form class="delete-form" method="POST" action="/delete">
+        <button name="id" value="<?= $pasakums["id"] ?>">Delete</button> </form>
+    </li>
 
     <?php } ?>
   </ul>

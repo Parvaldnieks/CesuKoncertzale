@@ -11,7 +11,8 @@
   <ul>
     <?php foreach($pasakumi as $pasakums) { ?>
 
-    <li>PASAKUMS - <?= $pasakums["name"] ?> / <?= $pasakums["clock"] ?> / <?= $pasakums["place"] ?> 
+    <li>
+        PASAKUMS - <a href="/show?id=<?= $pasakums["id"]?>"> <?= $pasakums["name"] ?> / <?= $pasakums["clock"] ?> / <?= $pasakums["place"] ?> </a>
         <form class="delete-form" method="POST" action="/delete">
         <button name="id" value="<?= $pasakums["id"] ?>">Delete</button> </form>
     </li>

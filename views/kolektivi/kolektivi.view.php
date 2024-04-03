@@ -11,7 +11,8 @@
   <ul>
     <?php foreach($kolektivi as $kolektivs) { ?>
 
-      <li>PASAKUMS - <?= $kolektivs["name"] ?> / <?= $kolektivs["description"] ?>
+      <li>
+        KOLEKTIVS - <a href="/show?id=<?= $kolektivs["id"]?>"> <?= $kolektivs["name"] ?> / <?= $kolektivs["description"] ?> </a>
         <form class="delete-form" method="POST" action="/delete">
         <button name="id" value="<?= $kolektivs["id"] ?>">Delete</button> </form>
       </li>

@@ -6,27 +6,27 @@
 <form method="POST">
 
     <label>Date:
-        <input type="datetime-local" name="clock" value="<?= $_GET["clock"] ?? "" ?>"/>
+        <input type="datetime-local" name="clock" value="<?= $_POST["clock"] ?? "" ?>"/>
             <?php if(isset($errors["clock"])) { ?>
                 <p><?= $errors["clock"] ?></p>
                     <?php } ?>
     </label>
 
     <label>Name:
-        <input name="title" value="<?= $_GET["title"] ?? "" ?>"/>
+        <input name="name" value="<?= $_POST["name"] ?? "" ?>"/>
             <?php if(isset($errors["title"])) { ?>
                 <p><?= $errors["title"] ?></p>
                     <?php } ?>
     </label>
 
     <label>Place:
-        <input name="place" value="<?= $_GET["place"] ?? "" ?>"/>
-            <?php if(isset($errors["place"])) { ?>
-                <p><?= $errors["place"] ?></p>
+        <input name="place" value="<?= $_POST["place"] ?? "" ?>"/>
+            <?php if(isset($errors["title"])) { ?>
+                <p><?= $errors["title"] ?></p>
                     <?php } ?>
     </label>
 
     <button>Poga</button>
 </form>
-                
+
 <?php require "views/components/footer.php" ?>

@@ -8,10 +8,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     if($_POST["clock"] == "") {
         $errors["clock"] = "Clock cannot be empty!";
     }
-        if(($_POST["name"])) {
+        if(($_POST["name"] == "")) {
                 $errors["name"] = "Name cannot be empty!";
         }
-            if($_POST["place"]) {
+            if($_POST["place"] == "") {
                     $errors["place"] = "Place cannot be empty!";
             }
                 if(empty($errors)) {

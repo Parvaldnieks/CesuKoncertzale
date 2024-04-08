@@ -11,7 +11,5 @@ $params = [":id" => $_GET["id"]];
 $pasakums = $db->execute($query, $params)
                ->fetch();
 
-// dd($pasakums);
-
 $title = "Show";
-require "views/show.view.php";
+require "views/pasakumi/show.view.php";

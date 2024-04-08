@@ -1,5 +1,5 @@
-<?php require "components/head.php" ?>
-<?php require "components/navbar.php" ?>
+<?php require "views/components/head.php" ?>
+<?php require "views/components/navbar.php" ?>
 
   <form>
     <input name='id' value='<?= ($_GET["id"] ?? "") ?>' />
@@ -19,3 +19,5 @@
 
     <?php } ?>
   </ul>
+
+<?php require "views/components/footer.php" ?>

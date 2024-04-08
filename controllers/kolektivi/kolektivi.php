@@ -1,16 +1,17 @@
 <?php
+
 require "Database.php";
 
 $config = require("config.php");
 
 $db = new Database($config);
 
-$query = "SELECT * FROM pasakumi";
+$query = "SELECT * FROM kolektivi";
 $params = [];
 
-$pasakumi = $db
+$kolektivi = $db
           ->execute($query, $params)
           ->fetchAll();
 
 $title = "Pasakumi";
-require "views/pasakumi.view.php";
+require "views/kolektivi/kolektivi.view.php";

@@ -5,13 +5,6 @@
 
 <form method="POST">
 
-    <label>Date:
-        <input type="datetime-local" name="clock" value="<?= $_POST["clock"] ?? "" ?>"/>
-            <?php if(isset($errors["clock"])) { ?>
-                <p><?= $errors["clock"] ?></p>
-                    <?php } ?>
-    </label>
-
     <label>Name:
         <input name="name" value="<?= $_POST["name"] ?? "" ?>"/>
             <?php if(isset($errors["title"])) { ?>
@@ -19,8 +12,8 @@
                     <?php } ?>
     </label>
 
-    <label>Place:
-        <input name="place" value="<?= $_POST["place"] ?? "" ?>"/>
+    <label>Description:
+        <input name="description" value="<?= $_POST["description"] ?? "" ?>"/>
             <?php if(isset($errors["title"])) { ?>
                 <p><?= $errors["title"] ?></p>
                     <?php } ?>

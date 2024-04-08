@@ -1,6 +1,6 @@
-<?php require "components/head.php" ?>
-<?php require "components/navbar.php" ?>
+<?php require "views/components/head.php" ?>
+<?php require "views/components/navbar.php" ?>
 
-<h1> <?= $pasakums["name"] ?> / <?= $pasakums["clock"] ?> / <?= $pasakums["place"] ?> </h1>
+<h1> <?= $kolektivs["name"] ?> / <?= $kolektivs["description"] ?> </h1>
 
-<?php require "components/footer.php" ?>
+<?php require "views/components/footer.php" ?>
